@@ -3,6 +3,9 @@ import Header from '../components/Header'
 import { auth } from "../firebase";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import Note from "../assets/Note.png";
+import Task from "../assets/Task.png";
+import Timer from "../assets/Timer.png";
 
 
 function LandingPage() {
@@ -42,7 +45,7 @@ function LandingPage() {
           {/* Tasks */}
           <div className="grid grid-cols-3  bg-black/50 backdrop-blur-xl p-6 rounded-xl shadow-md">
             <div className="">
-              <img width={'100px'} src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-task-list-png-image_5687735.png" alt="Task" />
+              <img width={'100px'} src={Task} alt="Task" />
             </div>
             <div className="justify-items-start col-span-2">
               <h3 className="text-2xl font-semibold mb-2">Tasks</h3>
@@ -58,7 +61,7 @@ function LandingPage() {
           {/* Notes */}
           <div className="grid grid-cols-3 bg-black/50 backdrop-blur-xl p-6 rounded-xl shadow-md">
             <div className="">
-              <img width={'100px'} src="https://pngimg.com/d/sticky_note_PNG18964.png" alt="Task" />
+              <img width={'100px'} src={Note} alt="Task" />
             </div>
             <div className="justify-items-start col-span-2">
               <h3 className="text-2xl font-semibold mb-2">Notes</h3>
@@ -74,7 +77,7 @@ function LandingPage() {
           {/* Study Timer */}
           <div className="grid grid-cols-3 bg-black/50 backdrop-blur-xl p-6 rounded-xl shadow-md">
             <div className="">
-              <img width={'100px'} src="https://pngimg.com/d/stopwatch_PNG118.png" alt="Timer" />
+              <img width={'100px'} src={Timer} alt="Timer" />
             </div>
             <div className="justify-items-start col-span-2">
               <h3 className="text-2xl font-semibold mb-2">Study Timer</h3>

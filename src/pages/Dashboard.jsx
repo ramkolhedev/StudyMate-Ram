@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import { db, auth } from "../firebase";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { ClipboardList, Notebook, Clock } from "lucide-react";
+import Note from "../assets/Note.png";
+import Timer from "../assets/Timer.png";
+import Task from "../assets/Task.png";
 
 function Dashboard() {
   const [taskCount, setTaskCount] = useState(0);
@@ -51,7 +54,7 @@ function Dashboard() {
           <div className="bg-[url(https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg)] rounded-xl shadow-lg p-6 border border-gray-200/50 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center gap-4 mb-4">
               <div className="">
-              <img width={'100px'} src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-task-list-png-image_5687735.png" alt="Task" />
+              <img width={'100px'} src={Task} alt="Task" />
             </div>
               <h2 className="text-2xl font-semibold text-gray-100">Tasks</h2>
             </div>
@@ -70,7 +73,7 @@ function Dashboard() {
           <div className="bg-[url(https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg)] rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center gap-4 mb-4">
               <div className="">
-              <img width={'127px'} src="https://pngimg.com/d/sticky_note_PNG18964.png" alt="Task" />
+              <img width={'127px'} src={Note} alt="Task" />
             </div>
               <h2 className="text-2xl font-semibold text-gray-100">Notes</h2>
             </div>
@@ -88,7 +91,7 @@ function Dashboard() {
           <div className="bg-[url(https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg)] rounded-xl shadow-lg p-6 border border-indigo-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col items-center gap-4 mb-4">
               <div className="">
-              <img width={'100px'} src="https://pngimg.com/d/stopwatch_PNG118.png" alt="Timer" />
+              <img width={'100px'} src={Timer} alt="Timer" />
             </div>
               <h2 className="text-2xl font-semibold text-gray-100">Study Timer</h2>
             </div>
