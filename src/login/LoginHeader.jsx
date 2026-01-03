@@ -5,6 +5,7 @@ import { auth } from "../firebase";
 import swal from "sweetalert";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
+import logo from "../assets/logo.png";
 
 function LoginHeader() {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ function LoginHeader() {
       {/* Logo */}
       <div className="flex items-center gap-3">
         <img
-          src="\src\assets\logo.png"
+          src={logo}
           style={{ borderRadius: "50%" }}
           width="50px"
           alt=""
