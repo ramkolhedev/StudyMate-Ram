@@ -26,7 +26,7 @@ function Timer() {
 
   const handleReset = () => {
     if (mode === "focus") setTime(25 * 60);
-    if (mode === "short") setTime(5 * 60);
+    if (mode === "short") setTime(0 * 05);
     if (mode === "long") setTime(15 * 60);
     setIsRunning(false);
   };
@@ -35,7 +35,7 @@ function Timer() {
     setMode(newMode);
     setIsRunning(false);
     if (newMode === "focus") setTime(25 * 60);
-    if (newMode === "short") setTime(5 * 60);
+    if (newMode === "short") setTime(0 * 05);
     if (newMode === "long") setTime(15 * 60);
   };
 
